@@ -1,0 +1,502 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "SalesSystem",
+    "dateExported": "2024-03-09T10:39:46.244Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "05391e42-9439-405d-a25e-065dc6f2a3f1",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-09T06:25:35.036Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "7565ea84-b80b-4bcc-a48b-9f32e2376fad",
+            "name": "categories",
+            "containerId": "",
+            "created": "2024-03-09T09:43:29.786Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-03-09T09:53:34.107Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "cdea3380-54f8-44a6-b75a-ec44088b3f5d",
+            "name": "product exploration",
+            "containerId": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "created": "2024-03-09T10:04:50.882Z",
+            "sortNum": 140000
+        },
+        {
+            "_id": "5faee6a5-7415-45b6-9855-bc2b713be373",
+            "name": "cart",
+            "containerId": "",
+            "created": "2024-03-09T10:16:33.918Z",
+            "sortNum": 150000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "249ce916-10c8-40af-8fd6-297d016008db",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "05391e42-9439-405d-a25e-065dc6f2a3f1",
+            "name": "register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-09T06:25:35.037Z",
+            "modified": "2024-03-09T06:25:35.037Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Bryan"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Julian"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bjulian@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bjulian"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "87524323"
+                    },
+                    {
+                        "name": "role",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "de0b49d5-76fa-4a23-a5de-728ea17a1e69",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "05391e42-9439-405d-a25e-065dc6f2a3f1",
+            "name": "login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-09T06:25:35.038Z",
+            "modified": "2024-03-09T09:32:08.916Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmMyNWUxZDY3NTQ1ZWM3NDZhYzAiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzY3MDEsImV4cCI6MTcwOTk4NzUwMX0.J1LFaxYWPSiH5SXoqBlmx0ZCHqL6MqQziKqxiNXeDvw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "bjulian"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "1e119108-7fb8-4394-af9c-383709d4131a",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "05391e42-9439-405d-a25e-065dc6f2a3f1",
+            "name": "UpdateUser",
+            "url": "/update/65ec2c25e1d67545ec746ac0",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-09T06:25:35.039Z",
+            "modified": "2024-03-09T09:32:36.732Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmMyNWUxZDY3NTQ1ZWM3NDZhYzAiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzY3MjgsImV4cCI6MTcwOTk4NzUyOH0.KmqxdwR2hCjHUjQzVs4pFa8cLyL2VBq05KZxQF7bvfg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Melisa"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Rivas"
+                    },
+                    {
+                        "name": "email",
+                        "value": "melisarivas@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "mrivas"
+                    },
+                    {
+                        "name": "password",
+                        "value": "87654321",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "phone ",
+                        "value": "00128756"
+                    },
+                    {
+                        "name": "role",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "7d91c790-68dd-40c3-99f2-20a3ac0d7607",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "05391e42-9439-405d-a25e-065dc6f2a3f1",
+            "name": "DeleteUser",
+            "url": "/delete/65ec2c25e1d67545ec746ac0",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-09T06:25:35.040Z",
+            "modified": "2024-03-09T09:33:04.821Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmMyNWUxZDY3NTQ1ZWM3NDZhYzAiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzY3MjgsImV4cCI6MTcwOTk4NzUyOH0.KmqxdwR2hCjHUjQzVs4pFa8cLyL2VBq05KZxQF7bvfg"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "e4fb4b38-4124-4b65-a461-f7e9dd065608",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "7565ea84-b80b-4bcc-a48b-9f32e2376fad",
+            "name": "saveCategory",
+            "url": "/category/saveCategory",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2024-03-09T09:43:38.702Z",
+            "modified": "2024-03-09T09:45:50.064Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Electronicos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Celulares"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "4ad1882c-8260-4068-8d1d-2c02bb5e74cf",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "7565ea84-b80b-4bcc-a48b-9f32e2376fad",
+            "name": "updateCategory",
+            "url": "/category/CategoryUpdate/65ec2fcef4e02ed4680b1b52",
+            "method": "PUT",
+            "sortNum": 310000,
+            "created": "2024-03-09T09:43:56.177Z",
+            "modified": "2024-03-09T09:52:22.740Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Electrodomesticos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Variados"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "f30fb934-b86c-4a8b-9d08-4dab02acbc6d",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "7565ea84-b80b-4bcc-a48b-9f32e2376fad",
+            "name": "deleteCategory",
+            "url": "/category/deleteC/65ec3265f4e02ed4680b1b57",
+            "method": "DELETE",
+            "sortNum": 320000,
+            "created": "2024-03-09T09:44:10.205Z",
+            "modified": "2024-03-09T10:25:59.984Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "a7fe9d11-997f-4d0e-a37f-e057d8f7d019",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "7565ea84-b80b-4bcc-a48b-9f32e2376fad",
+            "name": "listCategory",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 330000,
+            "created": "2024-03-09T09:44:26.639Z",
+            "modified": "2024-03-09T09:53:05.149Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmVmMWY0ZTAyZWQ0NjgwYjFiNGYiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzczNzYsImV4cCI6MTcwOTk4ODE3Nn0.b6zZssJgQXi5vqhs9rhdeGj9eJINU-nPXP1NZHvkl0M"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "ffbd24e2-ab1d-43aa-b064-084b99cc730b",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "name": "saveProduct",
+            "url": "/product/saveProduct",
+            "method": "POST",
+            "sortNum": 340000,
+            "created": "2024-03-09T09:54:43.184Z",
+            "modified": "2024-03-09T10:13:30.172Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameProduct",
+                        "value": "Samsung s23 ultra"
+                    },
+                    {
+                        "name": "price",
+                        "value": "10000"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "0"
+                    },
+                    {
+                        "name": "sold",
+                        "value": "4"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65ec3265f4e02ed4680b1b57"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "a6309885-5f59-4da6-b535-666c58f5c9ae",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "name": "updateProduct",
+            "url": "/product/productUpdate/65ec32e5f4e02ed4680b1b5b",
+            "method": "PUT",
+            "sortNum": 350000,
+            "created": "2024-03-09T09:55:03.088Z",
+            "modified": "2024-03-09T09:59:55.099Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameProduct",
+                        "value": "!phone 14 pro max"
+                    },
+                    {
+                        "name": "price",
+                        "value": "14500"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "9"
+                    },
+                    {
+                        "name": "sold",
+                        "value": "1"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65ec3265f4e02ed4680b1b57"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "fd58b4a7-70c4-4fb6-aabd-54f16821a5ee",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "name": "deleteProduct",
+            "url": "",
+            "method": "GET",
+            "sortNum": 360000,
+            "created": "2024-03-09T09:55:14.973Z",
+            "modified": "2024-03-09T09:55:14.973Z",
+            "headers": []
+        },
+        {
+            "_id": "07861e14-39d0-4882-afc0-8415fbb5678e",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "8349f5c7-5c78-47c1-95d7-34505dcff84b",
+            "name": "listProducts",
+            "url": "/product/getProducts",
+            "method": "GET",
+            "sortNum": 370000,
+            "created": "2024-03-09T10:02:57.753Z",
+            "modified": "2024-03-09T10:03:25.739Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmVmMWY0ZTAyZWQ0NjgwYjFiNGYiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzczNzYsImV4cCI6MTcwOTk4ODE3Nn0.b6zZssJgQXi5vqhs9rhdeGj9eJINU-nPXP1NZHvkl0M"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fb9ee957-438b-408f-a15a-fcffdcd473df",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "cdea3380-54f8-44a6-b75a-ec44088b3f5d",
+            "name": "productsbyname",
+            "url": "/product/search",
+            "method": "GET",
+            "sortNum": 380000,
+            "created": "2024-03-09T10:05:12.542Z",
+            "modified": "2024-03-09T10:35:58.435Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": " Samsung s23 ultra"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d37bb80f-b2bc-4537-b441-0522515eafe1",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "cdea3380-54f8-44a6-b75a-ec44088b3f5d",
+            "name": "ProductsByCategory",
+            "url": "/product/getProductsByCategory/65ec3265f4e02ed4680b1b57",
+            "method": "GET",
+            "sortNum": 390000,
+            "created": "2024-03-09T10:08:27.492Z",
+            "modified": "2024-03-09T10:10:45.880Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34d09123-a93b-430f-bd81-35a038a24fd4",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "cdea3380-54f8-44a6-b75a-ec44088b3f5d",
+            "name": "outofStock",
+            "url": "/product/outofStock",
+            "method": "GET",
+            "sortNum": 400000,
+            "created": "2024-03-09T10:12:26.624Z",
+            "modified": "2024-03-09T10:13:12.258Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "817b8a62-abf7-4656-9f72-85786c72263f",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "cdea3380-54f8-44a6-b75a-ec44088b3f5d",
+            "name": "bestsellingproducts",
+            "url": "/product/getTopSellingProducts",
+            "method": "GET",
+            "sortNum": 410000,
+            "created": "2024-03-09T10:14:54.222Z",
+            "modified": "2024-03-09T10:15:25.335Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e2af1aa-3cb8-459c-9880-b4e5252d8a2f",
+            "colId": "b61cda0c-bbd7-4d9f-b0ff-97d6bd15688b",
+            "containerId": "5faee6a5-7415-45b6-9855-bc2b713be373",
+            "name": "createShoppingCart",
+            "url": "/shopping/saveCart",
+            "method": "POST",
+            "sortNum": 420000,
+            "created": "2024-03-09T10:17:01.492Z",
+            "modified": "2024-03-09T10:39:35.992Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVjMmVmMWY0ZTAyZWQ0NjgwYjFiNGYiLCJ1c2VybmFtZSI6ImJqdWxpYW4iLCJuYW1lIjoiQnJ5YW4iLCJpYXQiOjE3MDk5NzczNzYsImV4cCI6MTcwOTk4ODE3Nn0.b6zZssJgQXi5vqhs9rhdeGj9eJINU-nPXP1NZHvkl0M"
+                }
+            ],
+            "params": [],
+            "reqType": "post",
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
